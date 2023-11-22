@@ -72,7 +72,7 @@ $(OBJ_DIR)/%.o: src/%.c | $(OBJ_DIR)
 $(NAME): $(OBJS)
 	@$(CC) $(OBJS) $(CFLAGS) -o $(NAME) $(LIBS)
 	@printf '\033[A\033[20C'"\033[32;1m  ✅ Project has compiled successfully!          \033[0m"
-	@printf "\n\n    [🏳️ -FLAGS used: $(CFLAGS)]"
+	@printf "\n\n    [🏳️ FLAGS: \033[0;35m$(CFLAGS)\033[0m]"
 	@echo "\033[32;1m\n 💾 Executable \e[7m./$(NAME)\e[27m has been created in: \n    └─ 📂 \033[4;36m ~ $(PWD)\033[0m"
 
 clean:
