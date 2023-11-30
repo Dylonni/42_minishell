@@ -49,7 +49,7 @@ SRC_MAIN		=	src/main.c \
 					src/ft_printf/ft_putstr.c \
 
 SRCS        = ${SRC_MAIN}
-OBJ_DIR     = objs
+OBJ_DIR     = .objs
 OBJS        = $(patsubst src/%.c,$(OBJ_DIR)/%.o,$(SRCS))
 
 CC          = cc
